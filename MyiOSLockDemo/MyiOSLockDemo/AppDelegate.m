@@ -16,6 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    if (((NSString *)[[NSUserDefaults standardUserDefaults] objectForKey:@"backTime"]).length == 0) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"立即" forKey:@"backTime"];
+    }
     // Override point for customization after application launch.
     return YES;
 }

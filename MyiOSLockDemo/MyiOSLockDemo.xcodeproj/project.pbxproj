@@ -16,6 +16,9 @@
 		44E1E6D51C1071C4001C7F4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E1E6D31C1071C4001C7F4D /* LaunchScreen.storyboard */; };
 		44E1E6E01C1071C4001C7F4D /* MyiOSLockDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E1E6DF1C1071C4001C7F4D /* MyiOSLockDemoTests.m */; };
 		44E1E6EB1C1071C4001C7F4D /* MyiOSLockDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E1E6EA1C1071C4001C7F4D /* MyiOSLockDemoUITests.m */; };
+		44E1E6FF1C10768B001C7F4D /* LockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E1E6FD1C10768B001C7F4D /* LockController.m */; };
+		44E1E7001C10768B001C7F4D /* LockController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E1E6FE1C10768B001C7F4D /* LockController.xib */; };
+		44E1E7041C109151001C7F4D /* PickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E1E7031C109151001C7F4D /* PickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		44E1E6E61C1071C4001C7F4D /* MyiOSLockDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyiOSLockDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E1E6EA1C1071C4001C7F4D /* MyiOSLockDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyiOSLockDemoUITests.m; sourceTree = "<group>"; };
 		44E1E6EC1C1071C4001C7F4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44E1E6FC1C10768B001C7F4D /* LockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockController.h; sourceTree = "<group>"; };
+		44E1E6FD1C10768B001C7F4D /* LockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockController.m; sourceTree = "<group>"; };
+		44E1E6FE1C10768B001C7F4D /* LockController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LockController.xib; sourceTree = "<group>"; };
+		44E1E7021C109151001C7F4D /* PickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerView.h; sourceTree = "<group>"; };
+		44E1E7031C109151001C7F4D /* PickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerView.m; sourceTree = "<group>"; };
+		44E1E7051C10928C001C7F4D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +112,8 @@
 		44E1E6C11C1071C4001C7F4D /* MyiOSLockDemo */ = {
 			isa = PBXGroup;
 			children = (
+				44E1E7011C10913A001C7F4D /* PickerView */,
+				44E1E6F81C10765F001C7F4D /* LockController */,
 				44E1E6C51C1071C4001C7F4D /* AppDelegate.h */,
 				44E1E6C61C1071C4001C7F4D /* AppDelegate.m */,
 				44E1E6C81C1071C4001C7F4D /* ViewController.h */,
@@ -113,6 +124,7 @@
 				44E1E6D61C1071C4001C7F4D /* Info.plist */,
 				44E1E6CE1C1071C4001C7F4D /* MyiOSLockDemo.xcdatamodeld */,
 				44E1E6C21C1071C4001C7F4D /* Supporting Files */,
+				44E1E7051C10928C001C7F4D /* PrefixHeader.pch */,
 			);
 			path = MyiOSLockDemo;
 			sourceTree = "<group>";
@@ -141,6 +153,25 @@
 				44E1E6EC1C1071C4001C7F4D /* Info.plist */,
 			);
 			path = MyiOSLockDemoUITests;
+			sourceTree = "<group>";
+		};
+		44E1E6F81C10765F001C7F4D /* LockController */ = {
+			isa = PBXGroup;
+			children = (
+				44E1E6FC1C10768B001C7F4D /* LockController.h */,
+				44E1E6FD1C10768B001C7F4D /* LockController.m */,
+				44E1E6FE1C10768B001C7F4D /* LockController.xib */,
+			);
+			path = LockController;
+			sourceTree = "<group>";
+		};
+		44E1E7011C10913A001C7F4D /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				44E1E7021C109151001C7F4D /* PickerView.h */,
+				44E1E7031C109151001C7F4D /* PickerView.m */,
+			);
+			path = PickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +241,6 @@
 				TargetAttributes = {
 					44E1E6BE1C1071C4001C7F4D = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 3Y92XXLNT8;
 					};
 					44E1E6DA1C1071C4001C7F4D = {
 						CreatedOnToolsVersion = 7.1;
@@ -249,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E1E7001C10768B001C7F4D /* LockController.xib in Resources */,
 				44E1E6D51C1071C4001C7F4D /* LaunchScreen.storyboard in Resources */,
 				44E1E6D21C1071C4001C7F4D /* Assets.xcassets in Resources */,
 				44E1E6CD1C1071C4001C7F4D /* Main.storyboard in Resources */,
@@ -279,6 +310,8 @@
 				44E1E6CA1C1071C4001C7F4D /* ViewController.m in Sources */,
 				44E1E6D01C1071C4001C7F4D /* MyiOSLockDemo.xcdatamodeld in Sources */,
 				44E1E6C71C1071C4001C7F4D /* AppDelegate.m in Sources */,
+				44E1E6FF1C10768B001C7F4D /* LockController.m in Sources */,
+				44E1E7041C109151001C7F4D /* PickerView.m in Sources */,
 				44E1E6C41C1071C4001C7F4D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,9 +453,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyiOSLockDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = MyiOSLockDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "M-coppco.MyiOSLockDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = MyiOSLockDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -431,9 +466,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyiOSLockDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = MyiOSLockDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "M-coppco.MyiOSLockDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = MyiOSLockDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -505,6 +542,7 @@
 				44E1E6F11C1071C4001C7F4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44E1E6F21C1071C4001C7F4D /* Build configuration list for PBXNativeTarget "MyiOSLockDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +551,7 @@
 				44E1E6F41C1071C4001C7F4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44E1E6F51C1071C4001C7F4D /* Build configuration list for PBXNativeTarget "MyiOSLockDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +560,7 @@
 				44E1E6F71C1071C4001C7F4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
